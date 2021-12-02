@@ -1,7 +1,6 @@
 import * as React from "react";
 import {
   Container,
-  useColorMode,
   Flex,
   Box,
   HStack,
@@ -17,7 +16,6 @@ import {
   Menu,
   MenuButton,
   MenuList,
-  MenuItem,
   MenuOptionGroup,
   MenuItemOption,
 } from "@chakra-ui/react";
@@ -25,7 +23,6 @@ import { Logo } from "../components/logo";
 import { Link as GLink } from "gatsby";
 import bg from "../images/bark-bg.jpg";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
-import { What } from "../components/What";
 import { Section } from "../components/Section";
 import {
   ArrowForwardIcon,
@@ -40,7 +37,6 @@ const StarIcon = (props) => <CosmoStarIcon position="absolute" {...props} />;
 
 // markup
 const IndexPage = () => {
-  const { toggleColorMode } = useColorMode();
   return (
     <Box>
       <Box
