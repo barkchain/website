@@ -22,15 +22,15 @@ import {
   MenuItemOption,
 } from "@chakra-ui/react";
 import { Logo } from "../components/logo";
-import { Link as GLink } from "gatsby";
 import bg from "../images/bark-bg.jpg";
+import { Link as GLink } from "gatsby";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
 import { What } from "../components/What";
 import { Section } from "../components/Section";
 import {
   ArrowForwardIcon,
-  ChevronDownIcon,
   TriangleDownIcon,
+  ChevronDownIcon,
 } from "@chakra-ui/icons";
 import sectionBg from "../images/layer-bg.jpg";
 import { CosmoStarIcon } from "../components/icons/star";
@@ -62,15 +62,17 @@ const IndexPage = () => {
                   variant="outline"
                   rightIcon={<ChevronDownIcon />}
                 >
-                  English
+                  Dog
                 </MenuButton>
                 <MenuList>
                   <MenuOptionGroup
-                    defaultValue="en"
+                    defaultValue="dog"
                     title="Language"
                     type="radio"
                   >
-                    <MenuItemOption value="en">English</MenuItemOption>
+                    <MenuItemOption value="en" as={GLink} to="/">
+                      English
+                    </MenuItemOption>
                     <MenuItemOption value="dog" as={GLink} to="/dog">
                       Dog
                     </MenuItemOption>
@@ -99,25 +101,22 @@ const IndexPage = () => {
             <StarIcon right="10%" top="20%" />
             <StarIcon left="-15%" bottom="-80%" />
             <Heading fontSize={{ base: "6xl", lg: "8xl" }} lineHeight="1">
-              What is BarkChain?
+              Bark bark Bark?
             </Heading>
           </Box>
           <Stack
             spacing={6}
             gridColumn={{ base: "1/span 12", md: "5/span 7" }}
             color="purple.200"
-            px={{ base: 6, md: 0 }}
           >
             <Text>
-              Barkchain is the barkiest chain in all the cosmos. Fairdropped to
-              many different participants of the cosmos ecosystem with 100% of
-              the allocation going to the community (75% airdropped and 25% to
-              the community pool).
+              Bark bark bark bark bark bark bark bark bark. Bark bark bark bark
+              bark bark bark bark bark bark 100% bark bark bark bark bark bark
+              bark (75% bark bark 25% bark bark bark bark).
             </Text>
             <Text>
-              There have been many dog coins, but there is only one barkchain,
-              full of barkstronauts working together to bark across the
-              interchain.
+              Bark bark bark bark bark bark, bark bark bark bark bark bark, bark
+              bark bark bark bark bark bark bark bark bark.
             </Text>
           </Stack>
         </Grid>
@@ -155,7 +154,7 @@ const IndexPage = () => {
               <TriangleDownIcon
                 color="purple.800"
                 position="absolute"
-                bottom={{ base: -3, lg: -5 }}
+                bottom={-4}
                 left={6}
               />
             </Center>
@@ -164,14 +163,14 @@ const IndexPage = () => {
               textAlign="left"
               lineHeight="1"
             >
-              Why BarkChain?
+              Bark bark?
             </Heading>
           </Box>
         </Grid>
         <Grid
           gridTemplateColumns="repeat(12,1fr)"
           gridGap={6}
-          rowGap={{ base: 12, md: 24 }}
+          rowGap={24}
           mt={24}
           px={6}
         >
@@ -182,16 +181,16 @@ const IndexPage = () => {
             <StarIcon left="-20%" />
             <StarIcon right="-20%" top="-15%" />
             <Heading as="h4" fontSize="2xl" mb={4}>
-              How do I get Bark?
+              Bark bark bark bark Bark?
             </Heading>
             <Stack spacing={6} color="purple.300">
               <Text>
-                If you had a balance of atom, osmo, tick, or Juno at the time of
-                the snapshot then you probably already have some bark!
+                Bark bark bark bark bark bark bark, bark, bark, bark bark bark
+                bark bark bark bark bark bark bark bark bark bark bark bark!
               </Text>
               <Text>
-                Soon enough you will likely be able to buy/sell bark across the
-                interchain on barkilicious DEXes like Osmosis.
+                Bark bark bark bark bark bark bark bark bark/bark bark bark bark
+                bark bark bark bark bark bark.
               </Text>
             </Stack>
           </Box>
@@ -202,12 +201,12 @@ const IndexPage = () => {
             <StarIcon left="-20%" top="10%" />
             <StarIcon right="35%" top="-25%" />
             <Heading as="h4" fontSize="2xl" mb={4}>
-              Can I stake Bark?
+              Bark bark bark Bark?
             </Heading>
             <Stack spacing={6} color="purple.300">
               <Text>
-                You sure can! Stake your bark with any barkchain validator to
-                help secure the network and gain adorably barkey rewards!
+                Bark bark bark! bark bark bark bark bark bark bark bark bark
+                bark bark bark bark bark bark barkey bark!
               </Text>
             </Stack>
           </Box>
@@ -218,12 +217,12 @@ const IndexPage = () => {
             <StarIcon top="-25%" left="10%" />
             <StarIcon right="-10%" top="10%" />
             <Heading as="h4" fontSize="2xl" mb={4}>
-              What are the tokenomics?
+              Bark bark bark bark?
             </Heading>
             <Stack spacing={6} color="purple.300">
               <Text>
-                The cutest tokenomics around include an entirely fair launch and
-                high initial inflation rate which decays over time.
+                Bark bark bark bark bark bark bark bark bark bark bark bark bark
+                bark bark bark bark bark.
               </Text>
               <Button
                 size="lg"
@@ -232,30 +231,29 @@ const IndexPage = () => {
                 variant="solid"
                 colorScheme="purple"
               >
-                View More Details
+                Bark bark Bark
               </Button>
             </Stack>
           </Box>
           <Box gridColumn={{ base: "1/span 12", md: "8/span 5" }}>
             <Heading as="h4" fontSize="2xl" mb={4}>
-              How do I get involved?
+              Bark bark bark bark bark?
             </Heading>
             <Stack spacing={6} color="purple.300">
               <Text>
-                Follow barkchain on Twitter and join our discord! The barkchain
-                community is entirely community owned and operated.
+                Bark bark bark bark bark bark bark bark! bark bark bark bark
+                bark bark bark bark bark.
               </Text>
             </Stack>
           </Box>
           <Box gridColumn={{ base: "1/span 12", md: "1/span 5" }}>
             <Heading as="h4" fontSize="2xl" mb={4}>
-              What is the Barkchain roadmap?
+              Bark bark bark bark bark?
             </Heading>
             <Stack spacing={6} color="purple.300">
               <Text>
-                To bark across the interchain in style! Any further development
-                and roadmap will be entirely determined by the barkchain
-                community. (bark, bark)
+                Bark bark bark bark bark bark bark! Bark bark bark bark bark
+                bark bark bark bark bark bark bark bark. (bark, bark)
               </Text>
             </Stack>
           </Box>

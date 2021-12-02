@@ -3,5 +3,14 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "BarkChain",
   },
-  plugins: [],
+  plugins: [
+    "@chakra-ui/gatsby-plugin",
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "en",
+        useLangKeyLayout: false,
+      },
+    },
+  ],
 };
