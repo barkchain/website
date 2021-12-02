@@ -18,6 +18,9 @@ const theme = {
     Container,
     Text,
   },
+  config: {
+    initialColorMode: "dark",
+  },
 };
 
 export default extendTheme(theme);

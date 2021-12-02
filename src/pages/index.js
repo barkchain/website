@@ -50,7 +50,7 @@ const IndexPage = () => {
       >
         <Container py={6} maxWidth="1200px">
           <Flex justifyContent="space-between" alignItems="center">
-            <Logo height="50px" />
+            <Logo width="200px" />
             <HStack spacing={6}>
               <Menu>
                 <MenuButton
